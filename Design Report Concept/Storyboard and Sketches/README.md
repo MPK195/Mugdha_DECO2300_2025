@@ -1,4 +1,4 @@
-Iteration 2 
+# Iteration 2 
 
 After testing iteration 1 storyboard with my peers and tutor, I received feedback on the complexity of the mirror reflection regarding the trial on thing. Moreover, the product's make and feel of the texture would be complex to work on with the given time constraint, I decided on altering my storyboard thus making changes in the iteration 2.
 
