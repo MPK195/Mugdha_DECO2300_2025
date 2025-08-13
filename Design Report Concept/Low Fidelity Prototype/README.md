@@ -40,12 +40,12 @@ The store model includes:
 ---
 
 ## User Flow
-1. **Select clothing** – Pull from the rack using gesture controls.
-2. **Find accessories** – Suggested items appear.
-3. **Try-on** – Clothes are placed on the avatar.
-4. **Add to cart** – Selected items go into a virtual cart.
-5. **Checkout** – Finalizes purchase.
-6. **Browse similar items** – Rotational gesture brings up related products.
+1. **Select clothing** 🫳 – Pull from the rack using gesture controls.
+2. **Getting combination** 👌🏻 – Suggested items appear.
+3. **Try-on**🤏 – Clothes are placed on the avatar.
+4. **Add to cart** 👍 – Selected items go into a virtual cart.
+5. **Checkout** ✋ – Finalizes purchase.
+6. **Browse similar items**  – Rotational gesture brings up related products.
 
 ---
 
@@ -55,5 +55,6 @@ The store model includes:
 
 **Store Model:**  
 ![Store Model](PXL_20250813_113328923.RAW-01.COVER~2.jpg)
+
 
 
