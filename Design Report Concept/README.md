@@ -11,7 +11,7 @@ A physical model of the virtual store environment, showing:
 - Gesture control illustrations
 - Example shopping flow from selection to checkout
 
-### [Storyboard and Sketches](../Storyboard%20and%20Sketches)
+### [Storyboard and Sketches](Storyboard%20and%20Sketches/)
 A set of drawings mapping out:
 - The user journey step-by-step
 - Key gestures and interactions
