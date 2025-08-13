@@ -4,7 +4,7 @@ This folder outlines the conceptual framework for the **Virtual Clothing Store**
 
 ---
 
-### [Low Fidelity Prototype](/Low%20Fidelity%20Prototype)
+### [Low Fidelity Prototype](Low%20Fidelity%20Prototype/)
 A physical model of the virtual store environment, showing:
 - Clothing rack with miniature garments
 - Mannequin avatar
