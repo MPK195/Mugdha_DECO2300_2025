@@ -4,8 +4,8 @@ This section contains the different iterations of the storyboard and related ske
 
 ## Iterations
 
-- [Iteration 1](iteration_1/README.md) – Initial storyboard and concept sketches.
-- [Iteration 2](iteration_2/README.md) – Updated storyboard based on feedback, with changes to interaction design.
+- [Iteration 1](iteration_1/) – Initial storyboard and concept sketches.
+- [Iteration 2](iteration_2/) – Updated storyboard based on feedback, with changes to interaction design.
 
 ---
 Click on any iteration to view the related files and details.
