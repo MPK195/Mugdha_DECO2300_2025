@@ -2,31 +2,42 @@ using UnityEngine;
 
 public class MannequinSwapper : MonoBehaviour
 {
-    [Header("Setup References")]
-    public Transform outfitAnchor;             // Empty GameObject on mannequin where outfits attach
-    public GameObject[] outfitPrefabs;         // Array of possible outfits
-    public GameObject purchasePanelPrefab;     // Prefab for buy panel
+    [Header("Setup")]
+    public Transform outfitAnchor;        // drag OutfitAnchor here
+    public GameObject[] outfitPrefabs;    // drag your clothing prefabs
 
-    private GameObject currentOutfit;
-    private GameObject purchasePanelInstance;
+    private int index = -1;
+    private GameObject current;
 
-    // Example method to swap outfit
-    public void SwapOutfit(int index)
+    public void SwapNext()
     {
-        if (index < 0 || index >= outfitPrefabs.Length) return;
+        if (!outfitAnchor || outfitPrefabs == null || outfitPrefabs.Length == 0) return;
 
-        // Destroy old outfit
-        if (currentOutfit != null)
-            Destroy(currentOutfit);
+        if (current) Destroy(current);
+        index = (index + 1) % outfitPrefabs.Length;
 
-        // Spawn new outfit under anchor
-        currentOutfit = Instantiate(outfitPrefabs[index], outfitAnchor.position, outfitAnchor.rotation, outfitAnchor);
+        current = Instantiate(outfitPrefabs[index], outfitAnchor, false);
+        current.transform.localPosition = Vector3.zero;
+        current.transform.localRotation = Quaternion.identity;
+        current.transform.localScale    = Vector3.one;
 
-        // Show purchase panel if not already shown
-        if (purchasePanelInstance == null && purchasePanelPrefab != null)
-        {
-            purchasePanelInstance = Instantiate(purchasePanelPrefab, transform.position + transform.forward * 1.5f, Quaternion.identity);
-            purchasePanelInstance.SetActive(true);
-        }
+        Debug.Log($"[XR] Outfit → {current.name}");
     }
+
+    public void SwapTo(int i)
+    {
+        if (!outfitAnchor || outfitPrefabs == null || outfitPrefabs.Length == 0) return;
+
+        if (current) Destroy(current);
+        index = Mathf.Clamp(i, 0, outfitPrefabs.Length - 1);
+
+        current = Instantiate(outfitPrefabs[index], outfitAnchor, false);
+        current.transform.localPosition = Vector3.zero;
+        current.transform.localRotation = Quaternion.identity;
+        current.transform.localScale    = Vector3.one;
+    }
+
+    // --- Wrappers to satisfy any older calls (e.g., from RaycastSelector.cs) ---
+    public void SwapOutfit()      { SwapNext(); }
+    public void SwapOutfit(int i) { SwapTo(i);  }
 }
