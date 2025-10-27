@@ -1,0 +1,75 @@
+# ==========================================
+# Unity GitIgnore for XR Project
+# ==========================================
+
+# OS / IDE generated files
+.DS_Store
+Thumbs.db
+.vs/
+.vscode/
+*.user
+*.suo
+*.tmp
+*.bak
+*.swp
+*.lock
+
+# Unity build & cache folders
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+MemoryCaptures/
+sysinfo.txt
+
+# Unity auto-generated files
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+
+# Unity build artifacts
+Build/
+Builds/
+*.apk
+*.aab
+*.ipa
+*.exe
+*.app
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+
+# Package cache — can be regenerated
+Packages/
+ProjectSettings/TimelineSettings.asset
+
+# Local asset store cache
+Assets/AssetStoreTools*
+Assets/StreamingAssets/aa/*
+Assets/AddressableAssetsData/*
+
+# Logs & crash dumps
+*.log
+*.stackdump
+
+# ==========================================
+# KEEP THESE (important for collaboration)
+# ==========================================
+
+# Keep all assets, scenes, and scripts
+!Assets/
+!Assets/**/*
+!ProjectSettings/
+!ProjectSettings/ProjectSettings.asset
+!Packages/manifest.json
+
+# ==========================================
+# End of file
+# ==========================================
